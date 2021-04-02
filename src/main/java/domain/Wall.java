@@ -1,4 +1,5 @@
 package domain;
+
 public class Wall {
     private int id; /*note id*/
     private int ownerId; /*owner's id whose wall has the note*/
@@ -29,18 +30,23 @@ public class Wall {
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public int getOwnerId() {
         return ownerId;
     }
+
     public void setOwnerId(int ownerId) {
         this.ownerId = ownerId;
     }
+
     public int getFromId() {
         return fromId;
     }
+
     public void setFromId(int fromId) {
         this.fromId = fromId;
     }
@@ -80,18 +86,23 @@ public class Wall {
     public int getDate() {
         return date;
     }
+
     public void setDate(int date) {
         this.date = date;
     }
+
     public String getText() {
         return text;
     }
+
     public void setText(String text) {
         this.text = text;
     }
+
     public CommentsInfo getCommentsInfo() {
         return commentsInfo;
     }
+
     public void setCommentsInfo(CommentsInfo commentsInfo) {
         this.commentsInfo = commentsInfo;
     }
@@ -107,6 +118,7 @@ public class Wall {
     public LikesInfo getLikesInfo() {
         return likesInfo;
     }
+
     public void setLikesInfo(LikesInfo likesInfo) {
         this.likesInfo = likesInfo;
     }
@@ -138,31 +150,47 @@ public class Wall {
     public int getViews() {
         return views;
     }
+
     public void setViews(int views) {
         this.views = views;
     }
+
     public int getSignerId() {
         return signerId;
     }
+
     public void setSignerId(int signerId) {
         this.signerId = signerId;
     }
+
     public boolean isCanPin() {
         return canPin;
     }
-    public boolean isCanDelete() {
+
+    public void setCanPin(boolean canPin) {
+        this.canPin = canPin;
+    }
+
+    public boolean isCanDelete(boolean b) {
         return canDelete;
     }
 
     public void setCanDelete(boolean canDelete) {
         this.canDelete = canDelete;
     }
+
+    public boolean isCanEdit() {
+        return canEdit;
+    }
+
     public void setCanEdit(boolean canEdit) {
         this.canEdit = canEdit;
     }
+
     public boolean isPinned() {
         return isPinned;
     }
+
     public void setPinned(boolean pinned) {
         isPinned = pinned;
     }
